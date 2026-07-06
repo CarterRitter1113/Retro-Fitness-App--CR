@@ -1,74 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CR Fitness</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CR Fitness</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: white;
-      text-align: center;
-    }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-    header {
-      background: #d60000;
-      padding: 20px;
-      font-size: 30px;
-      font-weight: bold;
-    }
+body{
+    background:#111;
+    color:white;
+}
 
-    .container {
-      padding: 30px;
-    }
+header{
+    background:#c40000;
+    padding:20px;
+    text-align:center;
+    font-size:32px;
+    font-weight:bold;
+}
 
-    .card {
-      background: #222;
-      margin: 20px auto;
-      padding: 20px;
-      border-radius: 15px;
-      max-width: 350px;
-    }
+.container{
+    padding:25px;
+    max-width:500px;
+    margin:auto;
+}
 
-    button {
-      background: #d60000;
-      color: white;
-      border: none;
-      padding: 15px 25px;
-      border-radius: 10px;
-      font-size: 18px;
-    }
-  </style>
+.card{
+    background:#1e1e1e;
+    border-radius:18px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 0 12px rgba(0,0,0,.4);
+}
+
+h2{
+    margin-bottom:10px;
+}
+
+p{
+    color:#cccccc;
+    line-height:1.5;
+}
+
+.button{
+    display:block;
+    width:100%;
+    padding:16px;
+    margin-top:15px;
+    border:none;
+    border-radius:12px;
+    background:#d60000;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.button:hover{
+    background:#ff2222;
+}
+
+.stats{
+    display:flex;
+    justify-content:space-between;
+    text-align:center;
+    margin-top:15px;
+}
+
+.stat{
+    flex:1;
+}
+
+.number{
+    font-size:28px;
+    font-weight:bold;
+    color:#ff3d3d;
+}
+
+footer{
+    text-align:center;
+    color:gray;
+    padding:20px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-CR Fitness 💪
+💪 CR Fitness
 </header>
 
 <div class="container">
 
-  <div class="card">
-    <h2>Welcome!</h2>
-    <p>Train hard. Track progress. Reach your goals.</p>
-  </div>
+<div class="card">
+<h2>Welcome, Carter!</h2>
+<p>Your workout journey starts here.</p>
 
-  <div class="card">
-    <h2>Today's Workout</h2>
-    <p>No workout logged yet.</p>
-    <button>Start Workout</button>
-  </div>
-
-  <div class="card">
-    <h2>Current Weight</h2>
-    <h1>220 lbs</h1>
-  </div>
-
+<div class="stats">
+<div class="stat">
+<div class="number">0</div>
+Workouts
 </div>
 
-</body>
-</html>
+<div class="stat">
+<div class="number">220</div>
+Weight
+</div>
+
+<div class="stat">
+<div class="number">180</div>
+Goal
+</div>
+</div>
+</div>
+
+<div class="card">
+<h2>Quick Actions</h2>
+
+<button class="button" onclick="alert('Workout Plans coming soon!')">
+🏋️ Workout Plans
+</button>
+
+<button class="button" onclick="alert('Progress Tracker coming soon!')">
+📈 Progress Tracker
+</button>
+
+<button class="button" onclick="alert('Calorie Calculator coming soon!')">
+🔥 Calorie Calculator
+</button>
+
+<button class="button" onclick="alert('Profile coming soon!')">
+👤
